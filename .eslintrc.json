@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "env": {
+    "browser": false
+  },
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint/eslint-plugin"],
+      "rules": {
+        "@typescript-eslint/interface-name-prefix": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-console": "warn",
+        "arrow-parens": 0
+      }
+    }
+  ],
+
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  }
+}

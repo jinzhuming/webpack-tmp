@@ -1,0 +1,16 @@
+{
+  "presets": [
+     "@babel/env",
+     "@babel/react",
+     "@babel/typescript",
+     "@emotion/babel-preset-css-prop"
+ ],
+  "plugins": [
+     "@babel/plugin-proposal-optional-chaining",
+    [
+      "@babel/plugin-transform-runtime", {
+        "corejs": 3
+      }
+    ]
+  ]
+}
